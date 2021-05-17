@@ -60,6 +60,9 @@ return {
 				(filter, function(v)
 					return v:tagName() ~= "script"
 				end)
+				(filter, function(v)
+					return v:tagName() ~= "div"
+				end)
 				(map, text)
 				(filter, function(v)
 					return not v:match("support RLN")
